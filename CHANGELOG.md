@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### :pencil: Changed
+- Fix typo in README.md
 - Update this CHANGELOG file
 
 ## [0.0.1] - 2025-03-05

@@ -60,7 +60,13 @@ You can build the EPUB by running `make` in the root of your project directory. 
 
 ## Requirements
 
-The `./scripts/build.sh` script relies on the [yq][3] command-line in order to read the `metadata.yaml`, [pandoc][1] to build the EPUB and [epubcheck][4] to validate your EPUB. Both command-line tools will be automatically installed upon building your EPUB if they're not already installed on your system.
+The `./scripts/build.sh` script relies on:
+
+- [pandoc][1] to build the EPUB,
+- [yq][3] to read the `metadata.yaml` and
+- [epubcheck][4] to validate your EPUB. 
+
+All these command-line tools will be automatically installed upon building your EPUB if they're not already installed on your system.
 
 
 [1]: https://pandoc.org/ "Pandoc Website"
