@@ -40,7 +40,7 @@ Pandoc build EPUBs according to its specific directory structure, which do not r
 1. Create your chapters in the `./EPUB/text` directory.
 2. Place any media content (i.e. images) in the `./EPUB/media` directory
 3. When using images in your text documents, specify their path from the root directory (i.e. `./EPUB/media/my_image.png`)
-3. Place any font in the `./EPUB/fonts` directory and updated the `./styles/styles.css` according to its relative path.
+3. Place any font in the `./EPUB/fonts` directory and update the `./EPUB/styles/styles.css` file according to its *relative* path.
 
 It may be useful to know that whatever name you give to your images in the media directory, they will be converted by pandoc to an increasing index number (except for `cover.png`).
 
