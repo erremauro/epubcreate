@@ -70,6 +70,6 @@ All these command-line tools will be automatically installed upon building your 
 
 
 [1]: https://pandoc.org/ "Pandoc Website"
-[3]: https://pandoc.org/MANUAL.html#metadata-variables "Pandoc Metadata"
+[2]: https://pandoc.org/MANUAL.html#metadata-variables "Pandoc Metadata"
 [3]: https://github.com/mikefarah/yq "yq GitHub Page"
 [4]: https://www.w3.org/publishing/epubcheck/ "EPUB Check Website"
