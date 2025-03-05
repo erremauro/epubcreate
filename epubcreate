@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Checks if an argument was provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <folder_name_or_full_path>"
+    exit 1
+fi
+
+# Sets the path to the skel folder relative to the script
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SKEL_DIR="$SCRIPT_DIR/skel"
+
+# Checks if the skel folder exists
+if [ ! -d "$SKEL_DIR" ]; then
+    echo "The 'skel' folder does not exist at: $SKEL_DIR"
+    exit 1
+fi
+
+# Determines the destination path relative to the user's current directory
+DEST_DIR="$1"
+
+# If the argument is a simple name, create a folder in the current directory
+if [[ "$1" != /* ]]; then
+    DEST_DIR="$(pwd)/$1"
+fi
+
+# Creates the destination folder if it doesn't exist
+mkdir -p "$DEST_DIR"
+
+# Copies the content of the skel folder to the destination folder
+cp -r "$SKEL_DIR/"* "$DEST_DIR/"
+
+echo "Content copied from '$SKEL_DIR' to '$DEST_DIR'"

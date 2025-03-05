@@ -1,0 +1,237 @@
+/*------------
+ Global Reset
+------------*/
+html, body, div, h1, h2, p, pre, a, em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  vertical-align: baseline;
+}
+/*------------
+ Embed Font
+------------*/
+@font-face {
+  font-family: "FF Meta Serif Pro Book";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/FFMetaSerifPro-Book.otf);
+}
+@font-face {
+  font-family: "FF Meta Serif Pro Book";
+  font-weight: normal;
+  font-style: italic;
+  src: url(../fonts/FFMetaSerifPro-BookItalic.otf);
+}
+@font-face {
+  font-family: "FF Meta Serif Pro Book";
+  font-weight: bold;
+  font-style: normal;
+  src: url(../fonts/FFMetaSerifPro-BookBold.otf);
+}
+@font-face {
+  font-family: "FF Meta Pro Normal";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/FFMetaPro-Normal.otf);
+}
+@font-face {
+  font-family: "FF Meta Serif Pro Light";
+  font-weight: normal;
+  font-style: italic;
+  src: url(../fonts/FFMetaSerifPro-LightItalic.otf);
+}
+/*------------
+ Layout
+------------*/
+body {
+  line-height: 1.1em;
+  font-family: "FF Meta Serif Pro Book", serif;
+  font-size: 1em;
+  padding: 1%;
+}
+/*------------
+ Headings
+------------*/
+h1 + p, h2 + p {
+  page-break-before: avoid;
+}
+h1, h2 {
+  line-height: 1em;
+}
+h1 {
+  page-break-after: always;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: normal;
+  margin: 6% 0 3% 0;
+  text-indent: 0;
+  font-family: "FF Meta Serif Pro Light", serif;
+}
+
+h2 {
+  page-break-before: always;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 3% 0% 12% 0%;
+  font-weight: bold;
+  font-family: "FF Meta Serif Pro Book", serif;
+}
+h3 {
+  font-size: 0.85em;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 3% 0% 3% 0%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "FF Meta Pro Normal", sans-serif;
+}
+h4 {
+  font-size: 0.75em;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 3% 0% 3% 0%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "FF Meta Pro Normal", sans-serif;
+}
+h5 {
+  font-size: 0.75em;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 3% 0% 3% 0%;
+  font-weight: bold;
+  font-family: "FF Meta Pro Normal", sans-serif;
+}
+h6 {
+  font-size: 0.75em;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 3% 0% 3% 0%;
+  font-weight: bold;
+  font-family: "FF Meta Pro Normal", sans-serif;
+}
+/*------------
+ Paragraphs
+------------*/
+p {
+  text-indent: 4%;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+/*------------
+ formatting
+------------*/
+em {
+  font-style: italic;
+}
+/*-----------
+  hyperlinks
+-------------*/
+a:link, a:visited, a:hover {
+  padding: 0.1em;
+  /*    text-decoration:none;*/
+}
+a:link {
+  color: #5a7000;
+}
+a:visited, a:hover {
+  color: #707070;
+}
+a.footnote-ref {
+  vertical-align: super;
+  font-size: smaller;
+  text-decoration: none;
+}
+/*------------
+   Verses
+------------*/
+.verse {
+  margin: 1.2em 4% 1.2em 8%;
+  text-indent: 0;
+}
+.verse pre {
+  tab-size: 2.5em;
+  /* Optional, if you need to fiddle with it. */
+  white-space: line-wrap;
+  margin-top: 0.48em;
+  margin-bottom: 0.48em;
+}
+.verse :first-child {
+  margin-top: 0;
+  /*padding-top: 5em;*/
+}
+.verse :last-child {
+  margin-bottom: 0;
+  /*padding-bottom: 5em;*/
+}
+/*--------
+Title Page
+--------*/
+.titlepage {
+  margin: 0 12%;
+  padding-top: 12%;
+  text-align: center;
+  page-break-after: always;
+}
+.titlepage .title {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: boldl;
+  margin: 6% 0 3% 0;
+  text-indent: 0;
+  font-family: "FF Meta Serif Pro Light", serif;
+}
+.titlepage .subtitle {
+  font-size: 0.85em;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0;
+  margin-bottom: 1em;
+  padding-top: 0;
+  font-weight: normal;
+  text-transform: none;
+  font-style: italic;
+  font-family: "FF Meta Serif Pro Light", serif;
+}
+.titlepage .publisher {
+  margin: 1em 0;
+}
+
+/*------------
+Copyright Page
+------------*/
+.rights {
+  font-size: 0.9em;
+}
+
+/*------------
+Tables
+-------------*/
+table {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid;
+  padding: .5em;
+}
+/*-------------
+Images
+-------------*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

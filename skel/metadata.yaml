@@ -1,0 +1,14 @@
+title: 
+  - type: main
+    text: <Main Title>
+  - type: subtitle
+    text: <Subtitle>
+creator:
+  - type: author
+    text: <Author>
+  - type: translator
+    text: <translator>
+publisher: <Publisher>
+rights: <Copyright>
+lang: <LangCode>
+subject: <Subject>
