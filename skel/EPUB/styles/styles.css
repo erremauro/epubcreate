@@ -54,6 +54,19 @@ body {
   font-size: 1em;
   padding: 1%;
 }
+
+.centered {
+  text-align: center;
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
+.pagebreak {
+  page-break-after: always;
+}
+
 /*------------
  Headings
 ------------*/
@@ -234,4 +247,5 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-}
+  }
+

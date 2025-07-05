@@ -10,5 +10,17 @@ Images in the `media` directory must be specified from the root directory path. 
 
 Check this [Markdown Guide][1] for a review of the syntax you can use to format your book.
 
+### Layouts
+
+Here's a list of custom helper formatting layout that might come in handy:
+
+```html
+<div class="centered no-indent pagebreak"></div>
+```
+
+* `.centered`: center the text
+* `.no-indent`: removes the paragraph indentation
+* `.pagebreak`: add a pagebreak *after* the element
+
 
 [1]: https://www.markdownguide.org/ "Markdown Guide"
